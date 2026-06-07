@@ -7,3 +7,12 @@ cc_binary(
         "//src:trading_system_lib",
     ],
 )
+
+cc_binary(
+    name = "rest_server",
+    srcs = ["rest_server.cc"],
+    deps = [
+        "//src:rest_api",
+        "//src:trading_system_lib",
+    ],
+)

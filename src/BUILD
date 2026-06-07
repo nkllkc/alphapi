@@ -80,3 +80,15 @@ cc_library(
         ":price_feed",
     ],
 )
+
+cc_library(
+    name = "rest_api",
+    srcs = ["rest_api.cc"],
+    hdrs = ["rest_api.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":trading_system_lib",
+        "@cpp_httplib",
+        "@nlohmann_json",
+    ],
+)
