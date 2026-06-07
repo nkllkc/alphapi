@@ -1,0 +1,48 @@
+# Bazel
+bazel-*
+*.bazelignore
+.bazelrc.local
+dist/
+
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.lib
+*.dll
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+CMakeLists.txt.user
+
+# Compiler
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# Generated files
+*.pb.cc
+*.pb.h
+
+# Test coverage
+*.gcov
+*.gcda
+*.gcno
+coverage/
+
+# Dependencies
+third_party/
+vendor/
+
+# CMake (if used)
+cmake-build-debug/
+cmake-build-release/
+CMakeFiles/
