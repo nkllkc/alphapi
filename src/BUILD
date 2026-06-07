@@ -92,3 +92,15 @@ cc_library(
         "@nlohmann_json",
     ],
 )
+
+cc_library(
+    name = "websocket_server",
+    srcs = ["websocket_server.cc"],
+    hdrs = ["websocket_server.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":trading_system_lib",
+        "@cpp_httplib",
+        "@nlohmann_json",
+    ],
+)

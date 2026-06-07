@@ -16,3 +16,13 @@ cc_binary(
         "//src:trading_system_lib",
     ],
 )
+
+cc_binary(
+    name = "streaming_server",
+    srcs = ["streaming_server.cc"],
+    deps = [
+        "//src:rest_api",
+        "//src:trading_system_lib",
+        "//src:websocket_server",
+    ],
+)
